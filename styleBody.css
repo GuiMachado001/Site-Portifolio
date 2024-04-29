@@ -1,0 +1,681 @@
+*{
+    font-family: monospace;
+    
+}
+body{
+    margin: 0; 
+    width: 100%;
+    height: 100%;
+    background-color: #18181b;
+    overflow-y: scroll; 
+    overflow-x: hidden;
+}
+body.light{
+    background-color: #fff;
+}
+section{
+    min-height: 100vh;
+    padding-top: 2rem;
+}
+#home{
+    display: flex;
+    justify-content: center;
+}
+.containerPg1{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center;  */
+    width: 80%;
+    height: 100vh;
+
+}
+
+.containerTituloBody{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    margin-top: 8%;
+}
+
+.containerBtnTema{
+    width: 100px;
+    height: 40px;
+    margin-top: 65px;
+}
+.inptCheckbox{
+    opacity: 0;
+    position: absolute;
+}
+.lbl.light{
+    background-color: #111;
+}
+.lbl{
+    background-color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 30px;
+    width: 60px;
+    transform: scale();
+}
+.ball.light{
+    background-color: #fff;
+}
+.ball{
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 0px;
+    width: 26px;
+    height: 26px;
+    transform: translate(0px);
+    transition: transform 0.2s linear;
+}
+.inptCheckbox:checked + .lbl .ball{
+    transform: translateX(34px);
+}
+
+.fa-moon{
+    color: #f1c40f;
+}
+.fa-sun{
+    color: #f39c12;
+}
+
+
+.TitleGeral{
+    width: 100%;
+    height: 200px;
+}
+.descTituloBody{
+    width: 500px;
+    height: 250px;
+    display: flex;
+    justify-content: center;  
+    flex-direction: column;
+}
+
+.desc{
+    font-size: 30px;
+}
+
+
+
+.titleApresentação{
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.titleApresentação h1{
+    font-size: 25px;
+    color: white;
+}
+.titleApresentação span{
+    font-size: 30px;
+    color: #9849ff;
+    text-shadow: 0 0 10px #9849ff;
+}
+.titleApresentação p{
+    font-size: 25px;
+    color: white;
+}
+.containerAvatar{
+    width: 500px;
+    height: 500px;
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#sobreMim{
+    display: flex;
+    justify-content: center;
+}
+
+.containerPg2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: 100vh;
+    border: 1px solid blue;
+}
+
+.containerBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 500px;
+    background-color: #151515;
+    border: 1px solid #fff;
+}
+
+.containerAvatar2{
+    width: 300px;
+    height: 400px;
+
+    
+}
+.imgAvatar2{
+    width: 100%;
+}
+.containerQuemSou{
+    width: 60%;
+    height: 350px;
+
+}
+
+.containerQuemSou{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-left: 50px;
+}
+.QS{
+    font-size: 20px;
+    color: #9849ff;
+    text-shadow: 0 0 10px #9849ff;
+}
+.name{
+    margin-top: 5px;
+    font-size: 25px;
+}
+.work{
+    margin-top: 5px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.sobreMim{
+    margin-top: 20px;
+    font-size: 1.6rem;
+    font-family: Archivo;
+    color: #ffffffa8;
+}
+
+.containerBoxIcons{
+    width: 80%;
+    height: 100px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    background-color: #151515;
+    border: 2px solid #fff;
+}
+
+.boxIcon{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000093;
+    border-radius: 20px;
+    transition: 1s;
+    cursor: pointer;
+    border: 2px solid #fff;
+
+}
+.icon{
+    width: 40px;
+    transition: 1s;
+    box-shadow: 0 0 10px #9849ff;
+}
+
+.boxIcon:hover{
+    width: 65px;
+    height: 65px;
+    border: 2px solid #9849ff;
+    box-shadow: 0px 0px 10px 1px white;
+}
+
+.containerBox, #sobreMim{
+    visibility: hidden;
+    z-index: -1;
+}
+.whatsapp, .github{
+    border-radius: 50%;
+}
+.teste{
+    border: 1px solid blue;
+    width: 100%;
+    height: 100vh;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+    
+}
+::-webkit-scrollbar-thumb{
+    width: 10px;
+    background-color: #9849ff;
+    border-radius: 50px; 
+}
+.whatsapp, .email,
+.linkedin,.github{
+    font-size: 8em;
+    color: #fff;
+}
+
+
+
+
+.containerPg3{
+    display: flex;
+    position: relative;
+    
+    flex-direction: column;
+    width: 80%;
+}
+#conhecimentos{
+    display: flex;
+    justify-content: center;
+}
+
+
+.titleConhec > h1{
+    color: white;
+}
+
+
+
+
+.meusCursos {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #151515;
+    border: 2px solid #fff;
+    display: flex;
+}
+
+.curso{
+    margin-left: 15px;
+    
+    color: white;
+    line-height: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.curso > h3, .cursando, .instituição {
+    color: #ffffffd2;
+    
+    align-items: center;
+    width: 100%;
+    
+    
+}
+
+.instituição{
+    
+    display: flex;
+}
+.containerInst{
+    
+    width: 400px;
+}
+
+
+.iconImg{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+
+
+.iconsLP{
+    width: 100%;
+    height: 45px;
+    gap: 10px;
+    
+    
+    display: flex;
+    align-items: center;
+}
+.iconImg{
+    background-color: #9849ff;
+    box-shadow: 0 0 5px #9849ff;
+    border-radius: 5px;
+}
+
+/* .hidden{
+    filter: blur(15px);
+    transition: all 2s;
+}
+.show{
+    opacity: 0;
+    filter: blur(0);
+    transition: all 2s;
+} */
+
+/* animação */
+
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .circle {
+    height: 33rem;
+    width: 33rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    border: 3px solid #9849ff;
+    box-shadow: 0 0 10px #9849ff;
+    position: relative;
+    animation: circleAnim linear infinite 20s;
+  }
+  @keyframes circleAnim {
+    to {
+      transform: rotate(360deg);
+    }
+}
+@keyframes colorAnim {
+to{
+    filter: hue-rotate(360deg);
+}
+  }
+  .circle a {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #29d882;
+    color: #fff;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    font-size: 22px;
+    position: absolute;
+    transition: 0.4s ease;
+    animation: colorAnim linear infinite 20s;
+  }
+  .circle img{
+    width: 90%;
+  }
+
+
+  .circle a:hover {
+    background: #1d222a;
+    color: #fff;
+  }
+  .circle a:nth-child(1) {
+    left: calc(50% - 2rem);
+    top: -2rem;
+  }
+  .circle a:nth-child(2) {
+    top: calc(50% - 2rem);
+    right: -2rem;
+  }
+  .circle a:nth-child(3) {
+    top: calc(50% - 2rem);
+    left: -2rem;
+  }
+  .circle a:nth-child(4) {
+    left: calc(50% - 2rem);
+    bottom: -2rem;
+  }
+  
+  .developer-img {
+    position: absolute;
+  }
+  .dev-img-wrapper {
+    width: 24rem;
+    height: 24rem;
+    background-color: #9849ff;
+    box-shadow: 0 0 10px #9849ff;
+    border-radius: 50%;
+    padding: 2rem 2rem 0 2rem;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+  }
+  .dev-img-wrapper img {
+    /* width: 100%; */
+    height: 100%;
+  }
+  .dev-works {
+    width: 25rem;
+    height: 9rem;
+    background-color: #1d222a;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #fff;
+    border: 0.2rem solid #bbb;
+    border-radius: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3);
+    position: absolute;
+  }
+  .dev-experience {
+    bottom: 10rem;
+    right: 33rem;
+  }
+  .dev-projects {
+    bottom: 1rem;
+    right: -2rem;
+  }
+  .dev-works span:nth-child(1) {
+    font-size: 3rem;
+    width: 50%;
+    text-align: center;
+  }
+  .dev-works span:nth-child(2) {
+    color: #9849ff;
+    width: 50%;
+  }
+
+
+
+
+
+
+
+  .section-border {
+    width: 0.3rem;
+    height: 90rem;
+    background-color: #9849ff;
+    box-shadow: 0 0 10px #9849ff;
+    margin-right: 5rem;
+    position: relative;
+  }
+  .section-border::before {
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    border: 0.3rem solid #9849ff;
+    box-shadow: 0 0 10px #9849ff;
+    background-color: #1d222a;
+    border-radius: 50%;
+    position: absolute;
+    left: -1.1rem;
+    top: -2rem;
+}
+.section-border::after {
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    border: 0.3rem solid #9849ff;
+    box-shadow: 0 0 10px #9849ff;
+    background-color: #1d222a;
+    border-radius: 50%;
+    position: absolute;
+    left: -1.1rem;
+    bottom: -2rem;
+}
+
+
+#projetos{
+   border: 1px solid red;
+   display: flex;
+   justify-content: center;
+   margin-top: 3rem;
+}
+
+.containerpg4{
+  border: 1px solid blue;
+  width: 80%;
+
+}
+
+.containerCards{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+
+}
+
+.containerCardsGeral{
+    width: 100%;
+    height: 450px;
+    border: 1px solid yellow;
+    display: flex;
+    justify-content: center;
+
+}
+
+.containerCardsGeral2{
+
+    margin-top: 2rem;
+    width: 100%;
+    height: 50%;
+    border: 1px solid yellow;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+
+.flipCard{
+    cursor: pointer;
+
+    border-radius: 30px;
+
+    width: 300px;
+    height: 400px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    perspective: 1000px;
+}
+.containerInfo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.flipCard:hover .flipCardInner{
+    transform: rotateY(-180deg);
+}
+
+.flipCard .flipCardBack{
+    transform: rotateY(-180deg);
+}
+
+
+.flipCardInner{
+    border-radius: 50px;
+
+    width: 300px;
+    height: 400px;
+
+    background-color: black;
+    border: 2px solid white;
+
+    perspective: 1000px;
+
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+.flipCardBack, .flipCardFront{
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+
+.flipCardImg{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.nameProjeto{
+    width: 250px;
+    height: 150px;
+    margin-top: 2rem;
+
+    border: 1px solid red;
+
+    color: #fff;
+}
+.containerImgProjeto{
+    margin-top: 2rem;
+    width: 250px;
+    height: 160px;
+    border: 1px solid red;
+}
+.containerImgProjeto img{
+    width: 100%;
+    height: 100%;
+}
+
+.containerDescBack{
+    width: 100%;
+    height: 75%;
+
+    padding-top: 2rem;
+
+
+    border: 1px solid red;
+}
+
+.iconProjeto{
+
+
+    width: 100%;
+    height: 15%;
+
+    padding-left: 15px;
+}
