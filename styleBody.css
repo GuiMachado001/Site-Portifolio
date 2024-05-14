@@ -648,7 +648,10 @@ to{
     height: 150px;
     margin-top: 2rem;
 
-    border: 1px solid red;
+    border: 2px solid white;
+    border-radius: 20px;
+
+    padding: 001px;
 
     color: #fff;
 }
@@ -656,7 +659,6 @@ to{
     margin-top: 2rem;
     width: 250px;
     height: 160px;
-    border: 1px solid red;
 }
 .containerImgProjeto img{
     width: 100%;
@@ -669,8 +671,6 @@ to{
 
     padding-top: 2rem;
 
-
-    border: 1px solid red;
 }
 
 .iconProjeto{
@@ -682,5 +682,8 @@ to{
     align-items: center;
 
     padding-left: 15px;
-    border: 1px solid red;
+}
+
+.nameProjeto > h1, h3{
+    margin-left: 10px;
 }
