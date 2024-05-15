@@ -295,6 +295,11 @@ section{
     justify-content: center;
 }
 
+.titleConhec{
+    width: 100%;
+    height: 10vh;
+
+}
 
 .titleConhec > h1{
     color: white;
@@ -547,6 +552,10 @@ to{
   border: 1px solid blue;
   width: 80%;
 
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
 }
 
 .containerCards{
@@ -577,6 +586,7 @@ to{
 
     border: 1px solid yellow;
     
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;

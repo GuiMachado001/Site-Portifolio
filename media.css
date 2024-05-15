@@ -1,0 +1,20 @@
+@media handheld and (min-width: 700px) and (orientation: landscape) {
+    .spnPortifolio {
+        font-size: 10px;
+    }
+
+    .margin {
+        width: 20%;
+        height: 10px;
+        display: flex;
+        align-items: center;
+        position: fixed;
+    }
+    .toolBar{
+        cursor: pointer;
+        position: relative;
+        font-size: 14px;
+        color: #ff0000;
+        text-decoration: none;
+    }
+}
