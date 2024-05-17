@@ -11,7 +11,7 @@ body{
     overflow-x: hidden;
 }
 body.light{
-    background-color: #fff;
+    background-color: #cecece91;
 }
 section{
     min-height: 100vh;
@@ -95,7 +95,7 @@ section{
 }
 .descTituloBody{
     width: 500px;
-    height: 250px;
+    height: 400px;
     display: flex;
     justify-content: center;  
     flex-direction: column;
@@ -164,7 +164,7 @@ section{
     justify-content: center;
     align-items: center;
     width: 80%;
-    height: 500px;
+    height: 100%;
     background-color: #151515;
     border: 1px solid #fff;
     flex-wrap: wrap;
@@ -575,7 +575,7 @@ to{
     height: 450px;
     border: 1px solid yellow;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
 
 }
@@ -591,10 +591,8 @@ to{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 20px;
 }
-
-
-
 
 .flipCard{
     cursor: pointer;
