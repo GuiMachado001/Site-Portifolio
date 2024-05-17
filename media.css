@@ -57,16 +57,22 @@
     
     .sobreMim{
         margin-top: 20px;
-        font-size: 1.6rem;
-        font-family: Archivo;
+
         color: #ffffffa8;
-        border: 1px solid blue;
+        border: 1px solid rgb(0, 255, 64);
     }
     .containerPg2{
         border: 1px solid blue;
         width: 100%;
+        margin-top: 10%;
     }
     .containerBox{
         height: 1000px;
+    }
+    .containerQuemSou{
+        display: flex;
+        align-items: center;
+        border: 1px solid red;
+        width: 300px;
     }
 }
